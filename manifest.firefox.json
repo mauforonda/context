@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "Context",
+  "description": "Fill any gaps and feed your curiosity on any page you read without leaving.",
+  "version": "1.0",
+  "homepage_url": "https://github.com/mauforonda/context",
+
+  "applications": {
+    "gecko": {
+      "id": "askwikipedia@mauforonda",
+      "strict_min_version": "55.0a1"
+    }
+  },
+
+  "icons": {
+    "48": "src/icons/48.png",
+    "96": "src/icons/96.png"
+  },
+
+  "browser_action": {
+    "default_title": "Context",
+    "default_popup": "src/panel/panel.html",
+    "default_icon": "src/icons/96.png"
+  },
+  
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {"default": "Alt+Z"},
+      "description": "Context"
+    }
+  },
+
+  "options_ui": {
+    "page": "src/options/options.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "<all_urls>",
+    "storage"
+  ]
+
+}
