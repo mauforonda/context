@@ -26,9 +26,9 @@ function chrome_build() {
 	cp manifest.chrome.json $tmp
 	cd $tmp
 	mv manifest.chrome.json manifest.json
-	zip --quiet -r ../../$zip *
+	#zip --quiet -r ../../$zip *
 	cd ../..
-	rm -rf $tmp
+	#rm -rf $tmp
 	echo 'Created dist/chrome.zip'
 }
 
