@@ -1,32 +1,33 @@
 {
   "manifest_version": 2,
-  "name": "Context",
+  "name": "Wikipedia Sidebar",
   "description": "Fill any gaps and feed your curiosity on any page you read without leaving.",
-  "version": "1.0",
+  "version": "3.0",
   "homepage_url": "https://github.com/mauforonda/context",
 
   "applications": {
     "gecko": {
-      "id": "askwikipedia@mauforonda",
-      "strict_min_version": "55.0a1"
+      "id": "wikipedia-sidebar@strangel8p",
+      "strict_min_version": "56.0"
     }
   },
 
   "icons": {
-    "48": "src/icons/48.png",
-    "96": "src/icons/96.png"
+    "48": "src/icons/icon.svg",
+    "96": "src/icons/icon.svg"
   },
 
-  "browser_action": {
-    "default_title": "Context",
-    "default_popup": "src/panel/panel.html",
-    "default_icon": "src/icons/icon.svg"
+  "sidebar_action": {
+    "default_title": "Wikipedia",
+    "default_panel": "src/panel/panel.html",
+    "default_icon": "src/icons/icon.svg",
+    "browser_style": false
   },
   
   "commands": {
-    "_execute_browser_action": {
+    "_execute_sidebar_action": {
       "suggested_key": {"default": "Alt+Z"},
-      "description": "Context"
+      "description": "Sidebar Toggle"
     }
   },
 
