@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Wikipedia Sidebar",
   "description": "Fill any gaps and feed your curiosity on any page you read without leaving.",
-  "version": "3.0",
+  "version": "3.1",
   "homepage_url": "https://github.com/mauforonda/context",
 
   "applications": {
@@ -26,7 +26,7 @@
   
   "commands": {
     "_execute_sidebar_action": {
-      "suggested_key": {"default": "Alt+Z"},
+      "suggested_key": {"default": "Ctrl+Shift+V"},
       "description": "Sidebar Toggle"
     }
   },
