@@ -21,9 +21,10 @@
     "default_title": "Wikipedia",
     "default_panel": "src/panel/panel.html",
     "default_icon": "src/icons/icon.svg",
-    "browser_style": false
+    "browser_style": false,
+    "open_at_install": false
   },
-  
+
   "commands": {
     "_execute_sidebar_action": {
       "suggested_key": {"default": "Ctrl+Shift+V"},
@@ -38,7 +39,8 @@
   "permissions": [
     "activeTab",
     "<all_urls>",
-    "storage"
+    "storage",
+    "theme"
   ]
 
 }

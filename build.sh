@@ -18,8 +18,8 @@ function firefox_build() {
 
 function chrome_build() {
 	tmp=tmp/chrome
-	zip=dist/chrome.zip
-	rm $zip
+	#zip=dist/chrome.zip
+	#rm $zip
 	mkdir -p $tmp/src
 	cp -r common/* $tmp/src
 	cp -r popup/* $tmp/src
