@@ -194,6 +194,7 @@ const write = function writeQuery() {
   input.addEventListener('keyup', (event) => {
     event.preventDefault();
     if (event.keyCode === 13) {
+      input.blur();
       input.style = 'border: none; color: #fbfbfb; background: #fbfbfb;';
       extract(input.value, myLanguage);
     }
