@@ -777,7 +777,7 @@ const restore = function restoreOptions() {
     if (options.language) {
       menu.selectedIndex = options.language.index;
     } else {
-      menu.selectedIndex = 36;
+      menu.selectedIndex = 40;
     }
   };
   chrome.storage.local.get(['language'],

@@ -1,131 +1,207 @@
-@font-face {
-    font-family: 'charterbold';
-    src: url('fonts/charter_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background: #fff;
+        --text: #202122;
+        --wikipedia: #3366cc;
+        --border: #818a933d;
+    }
 }
 
-@font-face {
-    font-family: 'charteritalic';
-    src: url('fonts/charter_italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #1b1b1b;
+        --text: #fff;
+        --wikipedia: #86acf4;
+        --border: #424242;
+    }
 }
 
-@font-face {
-    font-family: 'charterregular';
-    src: url('fonts/charter_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
     vertical-align: baseline;
     -moz-user-select: auto;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 body {
     line-height: 1;
     min-width: 400px;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 body {
     max-width: 400px;
     max-height: 500px;
     min-height: 20px;
-    font-family: charterregular;
+    font-family: Inter;
     font-size: 13px;
     line-height: 1.7;
     margin: 0px;
     padding: 0px;
-    color: #717475;
-    background-color: #ffffff;
-    overflow-x: hidden
+    color: var(--text);
+    background-color: var(--background);
+    overflow-x: hidden;
 }
 
-::-moz-selection{
-    background-color: #5f5f5f;
-    color: #fff9ff;
-}
-
-div{
-    font-weight: normal;
-    padding: 35px 35px;
+::-moz-selection {
+    background-color: var(--wikipedia);
+    color: var(--background);
 }
 
 .intro {
-    padding-bottom: 7px;
-    border-bottom: 1px solid #b5d1ea3d;
-    color: #b5d1ea;
-    padding-top: 13px;
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    opacity: 0.6;
 }
 
-.middle{
-    padding-top: 15px;
-    padding-bottom: 30px;
+.middle {
+    padding: 20px;
 }
 
-.middle > hr:nth-child(1){
+.middle > hr:nth-child(1) {
     display: none;
 }
 
-input{
+input {
     border: none;
     color: #fbfbfb;
     background: #fbfbfb;
 }
 
-a { 
-    color: #5f5f5f;
-    text-decoration: dotted underline #b5d1ea;
+a {
+    color: var(--text);
+    text-decoration: dotted underline var(--text);
     cursor: pointer;
     font-weight: bold;
 }
 
 a:hover {
-    color: #b5d1ea;;
-    border-radius: 2px
+    color: var(--wikipedia);
+    border-radius: 2px;
+    text-decoration: solid underline var(--wikipedia);
 }
 
-.selected{
-    color: #b5d1ea;
+.selected {
+    color: var(--wikipedia);
     border-radius: 2px;
+    text-decoration: solid underline var(--wikipedia);
 }
 
 .small {
@@ -140,9 +216,9 @@ a:hover {
     margin-top: 8px;
 }
 
-hr{
-    border: 0;    
-    border-top: 1px solid #f5f5f5;
+hr {
+    border: 0;
+    border-top: 1px solid var(--border);
     margin: 20px 0;
 }
 
@@ -159,24 +235,24 @@ hr{
     color: #b3b3b3;
 }
 
-.candidate{
+.candidate {
     margin: 0.6em 0.8em;
     font-size: 0.9em;
 }
 
-.imgcontain{
+.imgcontain {
     max-height: 300px;
     overflow: hidden;
 }
 
-#articleimg{
-    position:relative;
-    display:block;
+#articleimg {
+    position: relative;
+    display: block;
     width: 100%;
     height: auto;
 }
 
-.titleseparator{
+.titleseparator {
     margin: 2px 25px;
 }
 
@@ -192,7 +268,6 @@ hr{
 }
 
 #tooltiptext {
-    color: #b5d1ea;
     background-position: center;
     background-repeat: no-repeat;
     bottom: 150%;
@@ -205,14 +280,13 @@ hr{
     display: block;
     padding: 3px 3px;
     font-size: 16px;
-    background-color: #fff;
+    background-color: var(--background);
     animation-duration: 0.2s;
     animation-name: pop;
     text-align: center;
     line-height: 1.5em;
-    border: 1px solid #b5d1ea;
-    fill: #b5d1ea;
-    box-shadow: 2px 4px 17px -1px #9a9696f0;
+    border: 1px solid var(--wikipedia);
+    box-shadow: 2px 4px 17px -1px black;
     text-decoration: none;
     background-image: url("../icons/icon.svg");
     background-origin: content-box;
@@ -225,10 +299,10 @@ hr{
         height: 0%;
     }
     50% {
-        opacity:1;
-        bottom: 170%; 
+        opacity: 1;
+        bottom: 170%;
         height: 150%;
-    }   
+    }
     100% {
         bottom: 150%;
         height: 100%;
@@ -243,7 +317,7 @@ ul {
 
 #title {
     /* font-family: charterregular; */
-    font-family: charterbold;
+    font-family: Inter;
     font-size: 2.5em;
     text-align: left;
     padding: 15px 25px 12px 25px;
@@ -255,55 +329,55 @@ ul {
     background: #00000024;
 }
 
-/* .reference a {
-    padding: 5px 0px;
-    border-radius: 3px    
-} */
-
-i{
-    /* font-family: charteritalic; */
-}
-
-.reference{
-    padding-top: 20px;
+.reference {
+    padding: 20px;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
-.wikipediaLink{
-    font-family: charterregular;
+.wikipediaLink {
+    font-family: serif;
     text-decoration: none;
     text-align: center;
     width: 40px;
     height: 40px;
     font-weight: normal;
     font-size: 1.5rem;
-    /* padding: 7px; */
     background: transparent;
-    color: #b5d1ea;
+    color: var(--wikipedia);
     border-radius: 50%;
-    border: 1px solid #b5d1ea;
+    border: 1px solid var(--wikipedia);
 }
 
-.wikipediaLink:hover{
-    background: #b5d1ea;
-    color: #fff;
+.wikipediaLink:hover {
+    background: var(--wikipedia);
+    color: var(--background);
     border-radius: 50%;
 }
 
-.extractBody{
-    padding-bottom: 10px;
+.extractBody {
+    padding: 30px 30px 0 30px;
 }
 
-.candidates{
+.candidates {
     padding: 10px 12px;
-    border: 1px solid #dadada2e;
+    border: 1px solid var(--border);
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.tooltipicon{
+.tooltipicon {
     height: 22px;
     width: 22px;
     fill: #b5d1ea;
+}
+
+#focused {
+    background-color: var(--background);
+    color: var(--text);
+    margin: 30px 7%;
+    border: 1px solid var(--border);
+    padding: 5px 10px;
+    width: 80%;
+    border-radius: 5px;
 }

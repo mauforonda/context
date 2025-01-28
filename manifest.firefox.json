@@ -1,13 +1,12 @@
 {
   "manifest_version": 2,
   "name": "Context",
-  "description": "Fill any gaps and feed your curiosity on any page you read without leaving.",
-  "version": "1.2",
+  "description": "Popup Wikipedia",
+  "version": "1.3",
   "homepage_url": "https://github.com/mauforonda/context",
   "applications": {
     "gecko": {
-      "id": "askwikipedia@mauforonda",
-      "strict_min_version": "55.0a1"
+      "id": "askwikipedia@mauforonda"
     }
   },
   "icons": {

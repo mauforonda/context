@@ -31,19 +31,19 @@
        transform="matrix(1.0740738,0,0,1.0740738,-10.024045,-41.498517)"
        id="g9363">
       <circle
-         style="opacity:1;fill:#b5d1ea;fill-opacity:1;stroke:none;stroke-width:4.84002209;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:#3366cc;fill-opacity:1;stroke:none;stroke-width:4.84002209;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="path7712-4-9-0-0-3"
          cx="135.32507"
          cy="549.3869"
          r="2.6551528" />
       <circle
-         style="opacity:1;fill:#b5d1ea;fill-opacity:1;stroke:none;stroke-width:4.84002209;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:#3366cc;fill-opacity:1;stroke:none;stroke-width:4.84002209;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="path7712-4-9-0-9-9-6"
          cx="135.32507"
          cy="571.0766"
          r="2.6551528" />
       <path
-         style="opacity:1;fill:none;fill-opacity:0.94117647;stroke:#b5d1ea;stroke-width:2.86152983;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:none;fill-opacity:0.94117647;stroke:#3366cc;stroke-width:2.86152983;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          d="m 139.54267,549.35012 2.16645,0 z m -1.28418,5.44093 3.45145,0 c 1.50247,7e-5 2.72052,-1.21786 2.72059,-2.72032 8e-5,-1.50258 -1.21785,-2.72068 -2.72041,-2.72061 m -3.45163,5.44093 -9.31826,0 c -1.50258,-8e-5 -2.72068,1.21802 -2.7206,2.7206 8e-5,1.50246 1.21813,2.7204 2.7206,2.72032 m 9.67171,-5.7e-4 3.09718,0 z m 3.098,0 c 1.50256,-6e-5 2.72067,1.21803 2.72059,2.7206 -7e-5,1.50247 -1.21812,2.7204 -2.72059,2.72032 l -12.76971,0 c -1.50258,-7e-5 -2.72068,1.21803 -2.7206,2.72061 8e-5,1.50246 1.21813,2.72039 2.7206,2.72032 m 8.4e-4,-10.88129 9.67088,0 z m 0,10.88129 2.16642,0 z"
          id="path7712-4-9-0-9-9-6-2-1" />
     </g>
